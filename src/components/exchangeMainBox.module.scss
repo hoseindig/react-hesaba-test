@@ -1,0 +1,13 @@
+$color: #4a8a9b;
+$back-color: #ffffff;
+.exchange-main-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.down-box {
+  background-color: #f2f1f0;
+}
