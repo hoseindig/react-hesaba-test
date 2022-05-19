@@ -44,7 +44,7 @@ const ExchangeMainBox = () => {
       </div>
       <ToolbarBox />
       <div className={styles["down-box"] + " pt-4 pb-3 px-3"}>
-        <ExchangeBox selectHandler={selectHandler} name="to" disable={} />
+        <ExchangeBox selectHandler={selectHandler} name="to" disabled={true} />
       </div>
       <div className={styles["custom-btn"]}>
         <button onClick={getBaseData}>exchange</button>

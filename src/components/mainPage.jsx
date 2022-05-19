@@ -7,8 +7,8 @@ const MainPage = () => {
     <div>
       <BavBarBox />
       <Container>
-        <Row className=" mt-5 justify-content-md-center">
-          <Col md="auto">
+        <Row className=" mt-5 justify-content-md-center justify-content-sm-center">
+          <Col md={6} sm={8} xs={12} lg={5}>
             <CardBox title="title" header="header">
               <ExchangeMainBox></ExchangeMainBox>
             </CardBox>

@@ -1,8 +1,16 @@
+import { useState } from "react";
 import styles from "./InputBox.module.scss";
-const InputBox = ({ name = "name", val = 0, type = "number" }) => {
+const InputBox = ({
+  name = "name",
+  type = "number",
+  selectHandler,
+  disabled,
+}) => {
+  const [value, setValue] = useState(0);
   const onChange = ({ target: input }) => {
-    debugger;
     console.log(input.name, input.value);
+    setValue(input.value);
+    selectHandler({ name: input.name, value: input.value });
   };
   return (
     <input
@@ -10,7 +18,9 @@ const InputBox = ({ name = "name", val = 0, type = "number" }) => {
       onChange={onChange}
       className={styles["input"]}
       type={type}
-      value={val}
+      value={value}
+      disabled={disabled}
+      min="0"
     />
   );
 };

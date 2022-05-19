@@ -1,4 +1,7 @@
 import React from 'react';
+import { Provider } from "react-redux";
+import store from "./store";
+
 import ReactDOM from 'react-dom/client';
 import MainPage from './components/mainPage';
 
@@ -10,7 +13,7 @@ import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <MainPage />
-  </React.StrictMode>
+  </Provider>
 );
