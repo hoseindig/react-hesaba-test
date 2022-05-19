@@ -1,11 +1,17 @@
-import { InputGroup, FormControl } from "react-bootstrap";
-const InputBox = ({ symbol = "-", label = "label" }) => {
+import styles from "./InputBox.module.scss";
+const InputBox = ({ name = "name", val = 0, type = "number" }) => {
+  const onChange = ({ target: input }) => {
+    debugger;
+    console.log(input.name, input.value);
+  };
   return (
-    <InputGroup className="mb-3">
-      <FormControl aria-label={label} />
-      <InputGroup.Text>{symbol}</InputGroup.Text>
-      {/* <InputGroup.Text>0.00</InputGroup.Text> */}
-    </InputGroup>
+    <input
+      name={name}
+      onChange={onChange}
+      className={styles["input"]}
+      type={type}
+      value={val}
+    />
   );
 };
 

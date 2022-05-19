@@ -1,0 +1,17 @@
+.form-select {
+  border: 0 !important;
+}
+.input {
+  border: 0 !important;
+  width: 100%;
+  text-align: right;
+  background-color: transparent;
+  &:focus,
+  select:focus,
+  &:focus,
+  textarea:focus,
+  button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}

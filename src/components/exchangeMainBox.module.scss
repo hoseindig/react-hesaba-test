@@ -1,5 +1,6 @@
 $color: #4a8a9b;
 $back-color: #ffffff;
+
 .exchange-main-box {
   display: flex;
   flex-wrap: wrap;
@@ -10,4 +11,19 @@ $back-color: #ffffff;
 
 .down-box {
   background-color: #f2f1f0;
+}
+
+.custom-btn {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button {
+    color: rgb(247, 247, 247);
+    background-color: #7a44d0;
+    border: 0;
+    padding: 5px 50px;
+    border-radius: 20px;
+    text-transform: capitalize;
+  }
 }

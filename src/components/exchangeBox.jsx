@@ -6,7 +6,7 @@ import styles from "./exchangeBox.module.scss";
 const ExchangeBox = ({ options, symbol, label = "label" }) => {
   return (
     <div className={styles["exchange-box"]}>
-      <Container>
+      <Container className="px-0">
         <Row>
           <Col md="4">
             <div>

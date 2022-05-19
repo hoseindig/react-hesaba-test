@@ -9,8 +9,11 @@ const ExchangeMainBox = () => {
         <ExchangeBox />
       </div>
       <ToolbarBox />
-      <div className={styles["down-box"] + " py-5 px-3"}>
+      <div className={styles["down-box"] + " pt-4 pb-3 px-3"}>
         <ExchangeBox />
+      </div>
+      <div className={styles["custom-btn"]}>
+        <button>exchange</button>
       </div>
     </div>
   );
