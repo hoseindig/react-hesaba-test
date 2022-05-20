@@ -13,21 +13,20 @@ const ExchangeMainBox = () => {
   const [selected, setSelected] = useState({});
   useEffect(() => {
     return () => {
-      getBaseData();
+      // getBaseData();
       console.log("useEffect");
     };
   });
 
   const getBaseData = async () => {
-    // const url =
-    //   "https://v2.api.forex/rates/latest.json?beautify=true&key=71eb4b34-5f50-4c3b-bc37-c97aff8cedc4";
-
     const res = await http.get(config.getLatest); //test http://localhost:3100/getProductList
     console.log(res);
     if (res.data.result === "success") {
       dispatch(exchangeActions.setExchangeData(res.data));
     }
   };
+
+  getBaseData();
 
   const selectHandler = (p) => {
     debugger;
